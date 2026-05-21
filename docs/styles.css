@@ -1,0 +1,141 @@
+:root {
+  color-scheme: light;
+  --bg: #fff7ed;
+  --surface: #ffffff;
+  --text: #1c1917;
+  --muted: #57534e;
+  --border: #fed7aa;
+  --accent: #ea580c;
+  --accent-soft: #ffedd5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background: linear-gradient(180deg, var(--bg) 0%, #ffffff 240px);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--accent);
+}
+
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 20px 64px;
+}
+
+.hero,
+.article {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 28px;
+  box-shadow: 0 12px 40px rgba(234, 88, 12, 0.06);
+}
+
+.kicker {
+  margin: 0 0 8px;
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  line-height: 1.15;
+}
+
+h2 {
+  margin: 28px 0 10px;
+  font-size: 1.15rem;
+}
+
+h2:first-of-type {
+  margin-top: 0;
+}
+
+.lede,
+.article p,
+.article li {
+  color: var(--muted);
+}
+
+.links {
+  display: grid;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.card {
+  display: grid;
+  gap: 4px;
+  padding: 18px 20px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 120ms ease, background 120ms ease;
+}
+
+.card:hover {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.card strong {
+  color: var(--text);
+  font-size: 1.05rem;
+}
+
+.card span {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.meta {
+  margin: 0 0 20px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer {
+  margin-top: 24px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --bg: #1c1917;
+    --surface: #292524;
+    --text: #fafaf9;
+    --muted: #d6d3d1;
+    --border: #44403c;
+    --accent: #fb923c;
+    --accent-soft: #431407;
+  }
+
+  body {
+    background: linear-gradient(180deg, var(--bg) 0%, #0c0a09 240px);
+  }
+}

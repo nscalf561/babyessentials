@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Daily Baby</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <p class="kicker">Daily Baby</p>
+        <h1>One photo a day. A log that grows with your baby.</h1>
+        <p class="lede">
+          Daily Baby helps parents and caregivers save a daily photo, track sleep, feedings, and more, and
+          share access with family.
+        </p>
+      </header>
+
+      <nav class="links" aria-label="Legal and support">
+        <a class="card" href="privacy.html">
+          <strong>Privacy Policy</strong>
+          <span>How we collect, use, and delete your data.</span>
+        </a>
+        <a class="card" href="support.html">
+          <strong>Support</strong>
+          <span>Get help or contact us about Daily Baby.</span>
+        </a>
+      </nav>
+
+      <footer class="footer">
+        <p>&copy; <span id="year"></span> Baby Essentials. All rights reserved.</p>
+      </footer>
+    </main>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy — Daily Baby</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <a class="back" href="index.html">&larr; Daily Baby</a>
+
+      <article class="article">
+        <p class="kicker">Daily Baby</p>
+        <h1>Privacy Policy</h1>
+        <p class="meta">Last updated: May 21, 2026</p>
+
+        <p>
+          Baby Essentials ("we," "us," or "our") operates the Daily Baby mobile application (the "App"). This
+          Privacy Policy explains what information we collect, how we use it, and the choices you have.
+        </p>
+
+        <h2>Who this app is for</h2>
+        <p>
+          Daily Baby is intended for parents and caregivers. It is not directed at children under 13. You
+          should only add information about a baby if you are the parent, guardian, or an invited caregiver
+          with permission to do so.
+        </p>
+
+        <h2>Information we collect</h2>
+        <ul>
+          <li>
+            <strong>Account information:</strong> email address and password (stored and authenticated by our
+            backend provider, Supabase).
+          </li>
+          <li>
+            <strong>Baby profile information:</strong> baby name and workspace membership (owner or caregiver).
+          </li>
+          <li>
+            <strong>Daily photos:</strong> photos you capture or choose, including date taken and optional
+            image metadata (dimensions, file size).
+          </li>
+          <li>
+            <strong>Baby log entries:</strong> information you enter such as sleep, feedings, diapers,
+            journal notes, weight, and related timestamps.
+          </li>
+          <li>
+            <strong>App settings:</strong> reminder preferences, optional "save to Photos app" preference, and
+            log visibility settings.
+          </li>
+          <li>
+            <strong>Device data stored on your phone:</strong> a local copy of photos, logs, and settings so
+            the App works offline and loads quickly.
+          </li>
+        </ul>
+
+        <h2>How we use information</h2>
+        <p>We use your information to:</p>
+        <ul>
+          <li>Provide the App, including syncing data across your devices when signed in.</li>
+          <li>Let you share a baby profile with invited caregivers.</li>
+          <li>Send local push notifications for daily photo reminders (if you allow notifications).</li>
+          <li>Save a copy of photos to your device Photos app when you enable that setting.</li>
+          <li>Create optional slideshow videos on your device from your stored photos.</li>
+          <li>Maintain streaks and in-app achievements stored locally per baby profile.</li>
+        </ul>
+
+        <h2>Where data is stored</h2>
+        <ul>
+          <li>
+            <strong>Cloud:</strong> account, settings, baby profiles, log entries, photo metadata, and photo
+            files are stored with Supabase (hosted infrastructure). Photos are stored in private cloud storage
+            accessible only to members of that baby profile.
+          </li>
+          <li>
+            <strong>On your device:</strong> SQLite database, photo files in app storage, and small preferences
+            in secure storage (for example, active baby selection and sign-in session tokens).
+          </li>
+        </ul>
+
+        <h2>Sharing with others</h2>
+        <p>
+          If you own a baby profile, you may invite caregivers. Caregivers you invite can view and add photos
+          and log entries for that baby according to the app's sharing features. We do not sell your personal
+          information.
+        </p>
+
+        <h2>Service providers</h2>
+        <p>
+          We use Supabase for authentication, database, and file storage. These providers process data on our
+          behalf to run the App. Their handling of data is governed by their own policies and our agreements
+          with them.
+        </p>
+
+        <h2>Permissions</h2>
+        <p>The App may request access to:</p>
+        <ul>
+          <li><strong>Camera and photo library</strong> — to capture or choose daily photos.</li>
+          <li><strong>Notifications</strong> — to remind you to take a daily photo.</li>
+          <li><strong>Photos app (optional)</strong> — only if you turn on "Also save to Photos app."</li>
+        </ul>
+        <p>You can change or revoke permissions in your device settings.</p>
+
+        <h2>Retention</h2>
+        <p>
+          We keep your information while your account is active. If you delete your account in the App, we
+          delete your account and associated cloud data, including baby profiles you own and your contributions
+          to shared profiles, subject to reasonable backup retention by our providers for a limited period.
+        </p>
+
+        <h2>Your choices</h2>
+        <ul>
+          <li>Update reminder and photo settings in the App.</li>
+          <li>Revoke caregiver access or invites from the Family section.</li>
+          <li>
+            Delete your account and data in <strong>Settings &rarr; Delete account and data</strong>. If you
+            own a baby profile, that profile and its data are deleted for all caregivers.
+          </li>
+          <li>Sign out at any time from Settings.</li>
+        </ul>
+
+        <h2>Security</h2>
+        <p>
+          We use industry-standard measures such as encrypted connections (HTTPS) and access controls on cloud
+          data. No method of transmission or storage is 100% secure.
+        </p>
+
+        <h2>International users</h2>
+        <p>
+          If you use the App from outside the United States, your information may be processed in the United
+          States or other countries where our service providers operate.
+        </p>
+
+        <h2>Changes to this policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time. We will post the updated version on this page
+          and change the "Last updated" date above.
+        </p>
+
+        <h2>Contact us</h2>
+        <p>
+          Questions about privacy? Email
+          <a href="mailto:support@babyessentials.com">support@babyessentials.com</a> or visit our
+          <a href="support.html">Support</a> page.
+        </p>
+      </article>
+
+      <footer class="footer">
+        <p>&copy; <span id="year"></span> Baby Essentials.</p>
+      </footer>
+    </main>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
