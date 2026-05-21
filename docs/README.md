@@ -24,21 +24,21 @@ Example (replace with your username and repo):
 - `https://yourusername.github.io/daily_baby_photo/privacy.html`
 - `https://yourusername.github.io/daily_baby_photo/support.html`
 
-## Custom domain (`www.babyessentials.com`)
+## Custom domain (`www.babyessentials.app`)
 
-`docs/CNAME` is set to `www.babyessentials.com`. In the repo:
+`docs/CNAME` is set to `www.babyessentials.app`. In the repo:
 
-1. **Settings → Pages → Custom domain:** enter `www.babyessentials.com`.
+1. **Settings → Pages → Custom domain:** enter `www.babyessentials.app`.
 2. In **Cloudflare DNS** (or Squarespace if DNS stays there):
    - `www` → **CNAME** → `<github-username>.github.io`
-   - Optional: redirect apex `babyessentials.com` → `https://www.babyessentials.com`
+   - Optional: redirect apex `babyessentials.app` → `https://www.babyessentials.app`
 3. Wait for DNS + GitHub’s HTTPS certificate (can take up to 24 hours).
 
 Then use:
 
-- `https://www.babyessentials.com/privacy.html`
-- `https://www.babyessentials.com/support.html`
+- `https://www.babyessentials.app/privacy.html`
+- `https://www.babyessentials.app/support.html`
 
 ## Edit contact / legal name
 
-Update `support@babyessentials.com` and "Baby Essentials" in `privacy.html`, `support.html`, and `index.html` if needed.
+Update `support@babyessentials.app` and "Baby Essentials" in `privacy.html`, `support.html`, and `index.html` if needed.
